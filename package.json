@@ -1,0 +1,40 @@
+{
+  "name": "computer-use-agent",
+  "version": "1.0.0",
+  "description": "A computer-using agent built with E2B Desktop Sandbox and AI Elements",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "interactive": "tsx src/interactive.ts",
+    "diagnose": "tsx src/diagnose.ts",
+    "test": "tsx src/test.ts",
+    "opencode": "tsx src/opencode-main.ts",
+    "opencode:examples": "tsx src/opencode-examples.ts",
+    "ui": "next dev",
+    "sdk:examples": "tsx src/sdk-examples.ts",
+    "sdk:integrated": "tsx src/integrated-agent.ts"
+  },
+  "keywords": [
+    "e2b",
+    "desktop",
+    "sandbox",
+    "agent",
+    "computer-use"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@e2b/desktop": "^0.4.0",
+    "@anthropic-ai/sdk": "^0.26.0",
+    "@opencode-ai/sdk": "^0.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}
